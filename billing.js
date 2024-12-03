@@ -22,14 +22,14 @@ function showFullScreenPopup(invoices, totalDue, restrictFully, isAfter10th) {
                     <div class="bg-white p-2 rounded me-2">
                         <img src="https://res.cloudinary.com/abidcloud/image/upload/v1733258701/dlsoft/dlsoft-logo_xa2o0b.svg" alt="DL Soft Logo" height="40">
                     </div>
-                    <h5 class="modal-title mb-0">অ্যাক্সেস সীমিত করা হয়েছে</h5>
+                    <h5 class="modal-title mb-0">Restricted Access!</h5>
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <p class="mb-3">আপনার অসামান্য ইনভয়েস রয়েছে। ওয়েবসাইটটি ব্যবহার চালিয়ে যেতে আপনার বকেয়া পরিশোধ করুন।</p>
+                        <p class="mb-3">আপনার বিল বকেয়া রয়েছে। সফটওয়্যারটি ব্যবহার করতে আপনার বকেয়া পরিশোধ করুন।</p>
                             ${!restrictFully && !isAfter10th ? `
                                 <div class="alert alert-warning d-flex justify-content-between align-items-center">
-                                    <strong>গুরুত্বপূর্ণ: </strong> গ্রাহকদের অবশ্যই বর্তমান মাসের ১০ তারিখের মধ্যে ইনভয়েস পরিশোধ করতে হবে।
+                                    <strong>গুরুত্বপূর্ণ: </strong> গ্রাহকদের অবশ্যই বর্তমান মাসের ১০ তারিখের মধ্যে বকেয়া পরিশোধ করতে হবে।
                                     <button type="button" class="btn btn-secondary btn-sm" id="payLaterButton">পরে পরিশোধ করুন</button>
                                 </div>
                             ` : ''}
