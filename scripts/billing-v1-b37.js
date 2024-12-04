@@ -22,11 +22,14 @@ function showFullScreenPopup(invoices, totalDue, restrictFully, isAfter10th) {
                         <div style="background: white; padding: 10px; border-radius: 5px; margin-right: 10px; display: inline-block;">
                             <img src="https://res.cloudinary.com/abidcloud/image/upload/v1733258701/dlsoft/dlsoft-logo_xa2o0b.svg" alt="DL Soft Logo" height="40" style="display: block;">
                         </div>
-                        <h4 class="modal-title">অ্যাক্সেস সীমিত করা হয়েছে</h4>
+                        <h4 class="modal-title text-white float-right">Access Restricted!</h4>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <p>আপনার অসামান্য ইনভয়েস রয়েছে। ওয়েবসাইটটি ব্যবহার চালিয়ে যেতে আপনার বকেয়া পরিশোধ করুন।</p>
+                            <p>
+                            আপনার পেন্ডিং বিল রয়েছে। সফটওয়্যার পরিষেবা চালু রাখতে অনুগ্রহ করে দ্রুত বকেয়া বিল পরিশোধ করুন।
+                            আপনি নিচের "এখানে পরিশোধ করুন" বাটনের মাধ্যমে অনলাইনে পেমেন্ট করতে পারেন। এছাড়াও, বিকাশের মাধ্যমে বিল পরিশোধ করা যাবে অথবা 01915664090 নম্বরে WhatsApp বা কলের মাধ্যমে যোগাযোগ করুন। বিকাশ, নগদ, বা রকেট পার্সোনাল নম্বরে সেন্ড মানি করার পর আপনার ইনভয়েস রেফারেন্স প্রদান করুন।
+                            </p>
                             ${!restrictFully && !isAfter10th ? `
                                 <div class="alert alert-warning">
                                     <strong>গুরুত্বপূর্ণ:</strong> গ্রাহকদের অবশ্যই বর্তমান মাসের ১০ তারিখের মধ্যে ইনভয়েস পরিশোধ করতে হবে।
